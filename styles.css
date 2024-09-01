@@ -7,7 +7,7 @@ body {
 
 .menu {
     position: absolute;
-    left: 20px; /* Posiciona el menú a la izquierda */
+    left: 20px; 
     display: flex;
     align-items: center;
 }
@@ -22,28 +22,28 @@ body {
     align-items: center;
 }
 .logo {
-    height: 80%; /* Ajusta la altura de la imagen al 80% del banner */
-    margin-right: 20px; /* Espacio entre el logo y el texto */
+    height: 80%; 
+    margin-right: 20px; 
 }
 
 
 h1 {
-    margin: 0; /* Elimina el margen del h1 para centrar el texto en el banner */
-    z-index: 1; /* Asegura que el texto esté sobre el menú */
+    margin: 0; 
+    z-index: 1; 
 }
 
 .container {
     display: flex;
-    justify-content: space-between; /* Asegura espacio entre las cajas y la caja lateral */
+    justify-content: space-between; 
     padding: 20px;
     background-color: #ebebeb;
 }
 
 .main-content {
     display: flex;
-    flex-wrap: wrap; /* Permite que las cajas se distribuyan en múltiples filas */
+    flex-wrap: wrap; 
     justify-content: space-between;
-    width: 70%; /* Ajusta el ancho del contenedor principal de las cajas */
+    width: 70%; 
 }
 
 .box, .side-box {
@@ -52,39 +52,39 @@ h1 {
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
-    border-radius: 10px; /* Bordes redondeados suaves */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin-bottom: 10px;
 }
 
 .main-content .box {
-    flex: 0 1 calc(33.33% - 10px); /* Ajusta el tamaño de las cajas para que ocupen 1/3 del ancho */
-    height: 430px; /* Ajusta la altura según sea necesario */
+    flex: 0 1 calc(33.33% - 10px); 
+    height: 430px; 
 }
 
 .side-box {
     flex: 0 1 30%;
-    height: calc(430px * 2 + 10px); /* Altura de dos filas de cajas más el margen */
+    height: calc(430px * 2 + 10px); 
     margin-left: 10px;
 }
 
 .product-image, .product-image-oferta {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Bordes redondeados suaves */
-    margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+    border-radius: 10px; 
+    margin-bottom: 15px; 
 }
 
 .product-image {
-    max-height: 300px; /* Ajusta la altura máxima de la imagen */
+    max-height: 300px; 
 }
 
 .product-image-oferta {
-    max-height: 400px; /* Ajusta la altura máxima de la imagen */
+    max-height: 400px; 
 }
 
 h2 {
-    margin: 10px 0 5px; /* Espaciado entre el título y la descripción */
+    margin: 10px 0 5px; 
 }
 
 p {
@@ -93,8 +93,8 @@ p {
 }
 
 .product-image:hover {
-    transform: scale(1.1); /* Zoom del 5% */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     cursor: pointer;
 }
 
@@ -105,11 +105,11 @@ p {
     padding: 10px 20px; /* Relleno interno del botón */
     text-align: center; /* Texto centrado */
     text-decoration: none; /* Sin subrayado */
-    display: inline-block; /* Display inline-block para que respete el padding */
+    display: inline-block; 
     font-size: 20px; /* Tamaño de la fuente */
     font-family: 'Playfair Display', bold;
-    border-radius: 5px; /* Bordes redondeados */
-    margin-top: 15px; /* Espacio superior */
+    border-radius: 5px; 
+    margin-top: 15px; 
     cursor: pointer; /* Cursor de mano al pasar por encima */
     transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
 }
