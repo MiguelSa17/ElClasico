@@ -1,0 +1,119 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
+
+.menu {
+    position: absolute;
+    left: 20px; /* Posiciona el menú a la izquierda */
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    background-color: #06213e;
+    color: #f2efcf;
+    text-align: center;
+    height: 20vh; /* El banner ocupa el 20% de la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    height: 80%; /* Ajusta la altura de la imagen al 80% del banner */
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+
+
+h1 {
+    margin: 0; /* Elimina el margen del h1 para centrar el texto en el banner */
+    z-index: 1; /* Asegura que el texto esté sobre el menú */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Asegura espacio entre las cajas y la caja lateral */
+    padding: 20px;
+    background-color: #ebebeb;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cajas se distribuyan en múltiples filas */
+    justify-content: space-between;
+    width: 70%; /* Ajusta el ancho del contenedor principal de las cajas */
+}
+
+.box, .side-box {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px; /* Bordes redondeados suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 10px;
+}
+
+.main-content .box {
+    flex: 0 1 calc(33.33% - 10px); /* Ajusta el tamaño de las cajas para que ocupen 1/3 del ancho */
+    height: 430px; /* Ajusta la altura según sea necesario */
+}
+
+.side-box {
+    flex: 0 1 30%;
+    height: calc(430px * 2 + 10px); /* Altura de dos filas de cajas más el margen */
+    margin-left: 10px;
+}
+
+.product-image, .product-image-oferta {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados suaves */
+    margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.product-image {
+    max-height: 300px; /* Ajusta la altura máxima de la imagen */
+}
+
+.product-image-oferta {
+    max-height: 400px; /* Ajusta la altura máxima de la imagen */
+}
+
+h2 {
+    margin: 10px 0 5px; /* Espaciado entre el título y la descripción */
+}
+
+p {
+    margin: 0;
+    font-size: small;
+}
+
+.product-image:hover {
+    transform: scale(1.1); /* Zoom del 5% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    cursor: pointer;
+}
+
+.botoncompraoferta {
+    background-color: #06213e; /* Color de fondo del botón */
+    color: #f2efcf; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno interno del botón */
+    text-align: center; /* Texto centrado */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Display inline-block para que respete el padding */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-family: 'Playfair Display', bold;
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 15px; /* Espacio superior */
+    cursor: pointer; /* Cursor de mano al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+.botoncompraoferta:hover {
+    background-color: #7c8c8b; /* Color de fondo al pasar el mouse por encima */
+}
